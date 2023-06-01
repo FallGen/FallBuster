@@ -1,0 +1,97 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="images\characteristics.png" />
+    <None Remove="images\close.png" />
+    <None Remove="images\collapse.png" />
+    <None Remove="images\customization.png" />
+    <None Remove="images\drivers.png" />
+    <None Remove="images\gamburger.png" />
+    <None Remove="images\program\anydesk.png" />
+    <None Remove="images\program\ccleaner.png" />
+    <None Remove="images\program\CrystalDisklnfo.png" />
+    <None Remove="images\program\discord.png" />
+    <None Remove="images\program\epicgames.png" />
+    <None Remove="images\program\github.png" />
+    <None Remove="images\program\googlechrome.png" />
+    <None Remove="images\program\msi.png" />
+    <None Remove="images\program\notepad.png" />
+    <None Remove="images\program\nvidia.png" />
+    <None Remove="images\program\opera.png" />
+    <None Remove="images\program\OperaGX.png" />
+    <None Remove="images\program\planetvpn.png" />
+    <None Remove="images\program\qbittorrent.png" />
+    <None Remove="images\program\speccy.png" />
+    <None Remove="images\program\steam.png" />
+    <None Remove="images\program\telegram.png" />
+    <None Remove="images\program\VS.png" />
+    <None Remove="images\program\yandex.png" />
+    <None Remove="images\program\zetgaming.png" />
+    <None Remove="images\services.png" />
+    <None Remove="images\tweaks.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AngleSharp" Version="1.0.1" />
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.46" />
+    <PackageReference Include="MaterialDesignThemes" Version="4.7.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="System.Management" Version="7.0.0" />
+    <PackageReference Include="TopShelf.ServiceInstaller" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="images\characteristics.png" />
+    <Resource Include="images\close.png" />
+    <Resource Include="images\collapse.png" />
+    <Resource Include="images\customization.png" />
+    <Resource Include="images\drivers.png" />
+    <Resource Include="images\gamburger.png" />
+    <Resource Include="images\program\anydesk.png" />
+    <Resource Include="images\program\ccleaner.png" />
+    <Resource Include="images\program\CrystalDisklnfo.png" />
+    <Resource Include="images\program\discord.png" />
+    <Resource Include="images\program\epicgames.png" />
+    <Resource Include="images\program\github.png" />
+    <Resource Include="images\program\googlechrome.png" />
+    <Resource Include="images\program\msi.png" />
+    <Resource Include="images\program\notepad.png" />
+    <Resource Include="images\program\nvidia.png" />
+    <Resource Include="images\program\opera.png" />
+    <Resource Include="images\program\OperaGX.png" />
+    <Resource Include="images\program\planetvpn.png" />
+    <Resource Include="images\program\qbittorrent.png" />
+    <Resource Include="images\program\speccy.png" />
+    <Resource Include="images\program\steam.png" />
+    <Resource Include="images\program\telegram.png" />
+    <Resource Include="images\program\VS.png" />
+    <Resource Include="images\program\yandex.png" />
+    <Resource Include="images\program\zetgaming.png" />
+    <Resource Include="images\services.png" />
+    <Resource Include="images\tweaks.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
